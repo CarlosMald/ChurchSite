@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+
+}
+
+.main-header{
+    max-height: 80px;
+    background-color: #C99B2C;
+}
+
+.header-container {
+    max-width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    text-align: left;
+    padding: 0;
+    background-color: #C99B2C;
+    color: #f5f3f5;
+    font-weight: bold;
+    height: 80px;
+    width: 70%;
+    align-items: center;
+}
+
+.main-nav-list {
+    min-width: 80%;
+}
+
+.main-nav-list li {
+    padding: 2.3%;
+}
+
+
+.nav a {
+    color: #f5f3f5;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #ffe90033;
+}
+
+.nav a:visited {
+    color: #f5f3f5;
+}
+
+.nav ul {
+    padding-left: 0;
+    
+}
+
+.nav li {
+    display: inline;
+}
+
+.logo-container {
+    background-color: #C99B2C;
+    width: 30%;
+    max-height: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: right;
+}
+
+.church-logo {
+    object-fit: contain;
+    max-height: 80px;
+    text-align: center;
+}
+
+/* Slideshow Style */
+
+.home-slideshow-container {
+    box-sizing: border-box;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideshow-caption {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.number-text {
+    color:#f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
