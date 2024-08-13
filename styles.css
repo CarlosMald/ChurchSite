@@ -158,3 +158,28 @@ body {
     from {opacity: .4}
     to {opacity: 1}
 }
+
+/* Style for Pastor About page */ 
+
+.pastor-about-container {
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    margin-top: 100px;
+}
+
+.pastor-about-image-container {
+    height: 500px;
+    width: 500px;
+    margin-left: 150px;
+}
+
+.pastor-about-image {
+    max-height: 500px;
+    margin: auto;
+}
+
+.pastor-about-text {
+    width: 500px;
+}
