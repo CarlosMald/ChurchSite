@@ -9,7 +9,7 @@ body {
 }
 
 .header-container {
-    max-width: 96%;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
@@ -26,7 +26,7 @@ body {
     color: #f5f3f5;
     font-weight: bold;
     height: 80px;
-    width: 70%;
+    width: 750px;
     align-items: center;
 }
 
@@ -63,7 +63,7 @@ body {
 
 .logo-container {
     background-color: #C99B2C;
-    width: 30%;
+    width: 250px;
     max-height: 80px;
     padding-left: 0px;
     padding-right: 0px;
@@ -74,6 +74,7 @@ body {
     object-fit: contain;
     max-height: 80px;
     text-align: center;
+    padding-right: 10px;
 }
 
 /* Slideshow Style */
@@ -172,12 +173,12 @@ body {
 .pastor-about-image-container {
     height: 500px;
     width: 500px;
-    margin-left: 150px;
 }
 
 .pastor-about-image {
     max-height: 500px;
     margin: auto;
+    padding-left: 100px;
 }
 
 .pastor-about-text {
