@@ -3,9 +3,10 @@ body {
 
 }
 
+/* Header Style */
 .main-header{
     max-height: 80px;
-    background-color: #C99B2C;
+    background-color: #ffffff;
 }
 
 .header-container {
@@ -18,12 +19,14 @@ body {
     align-items: center;
 }
 
+/* Nav Style */
+
 .main-nav {
     display: flex;
     text-align: left;
     padding: 0;
-    background-color: #C99B2C;
-    color: #f5f3f5;
+    background-color: #ffffff;
+    color: #283B10;
     font-weight: bold;
     height: 80px;
     width: 750px;
@@ -40,17 +43,22 @@ body {
 
 
 .nav a {
-    color: #f5f3f5;
+    color: #283B10;
     text-decoration: none;
 }
 
 .nav a:hover {
-    background-color: #ffe90033;
+    color: #577d30;
 }
 
 .nav a:visited {
-    color: #f5f3f5;
+    color: #283B10;
 }
+
+.nav a:visited:hover {
+    color: #577d30;
+}
+
 
 .nav ul {
     padding-left: 0;
@@ -62,7 +70,7 @@ body {
 }
 
 .logo-container {
-    background-color: #C99B2C;
+    background-color: #ffffff;
     width: 250px;
     max-height: 80px;
     padding-left: 0px;
@@ -91,6 +99,7 @@ body {
 .mySlides {
     display: none;
 }
+
 
 .prev, .next {
     cursor: pointer;
