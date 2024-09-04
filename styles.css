@@ -1,7 +1,8 @@
 @media only screen and (max-width: 599px) {
     div {
-        max-width: 599px;
+        max-width: 450px;
     }
+
 }
 
 body {
@@ -178,13 +179,14 @@ body {
 /* Style for Pastor About page */ 
 
 .pastor-about-container {
-    height: 500px;
+    height: 1000px;
     width: 1000px;
     margin: auto;
     display: flex;
     margin-top: 100px;
     min-width: 0;
-    overflow:hidden;
+    overflow: hidden;
+    max-height: fit-content;
 
 }
 
@@ -201,4 +203,28 @@ body {
 
 .pastor-about-text {
     width: 500px;
+}
+
+/* Media query to override for mobile devices */
+
+@media only screen and (max-width: 599px) {
+
+    .pastor-about-container {
+        flex-wrap: wrap;
+    }
+
+    .pastor-about-image-container {
+        margin-bottom: 20px;
+        display: flex;
+    }
+
+    .pastor-about-image {
+        padding-left: 0;
+        margin: auto;
+    }
+
+    .pastor-about-text {
+        padding-bottom: 30px;
+    }
+
 }
