@@ -76,6 +76,10 @@ body {
     display: inline;
 }
 
+.mobile-nav-icon {
+    display: none;
+}
+
 .logo-container {
     background-color: #ffffff;
     width: 250px;
@@ -90,6 +94,21 @@ body {
     max-height: 80px;
     text-align: center;
     padding-right: 10px;
+}
+
+/* Styling for navbar on mobile devices */
+@media only screen and (max-width: 599px) {
+    .mobile-nav-icon{
+        visibility: visible;
+        display: block;
+        position: absolute;
+        right: 20px;
+        size: 200%;
+    }
+
+    #nav-links.hidden-nav-links {
+        display: none;
+    }
 }
 
 /* Slideshow Style */

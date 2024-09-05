@@ -25,3 +25,19 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
+document.getElementById("hamburger-menu").addEventListener("click", hamburgerMenu);
+
+function hamburgerMenu() {
+    var x = document.getElementById("nav-links");
+
+    if (x.classList.contains("hidden-nav-links")) {
+        x.classList.remove("hidden-nav-links");
+    }
+    else {
+        x.classList.add("hidden-nav-links");
+    }
+
+     
+    console.log("Hello, World!")
+}
