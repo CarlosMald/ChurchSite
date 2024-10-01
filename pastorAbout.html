@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Iglesia De Restauracion San Bernardino</title>
         <link rel="stylesheet" href="styles.css">
+        <!-- Icon for hamburger menus used on smaller screens-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <!-- script src="index.js"></script -->
@@ -16,12 +18,17 @@
                     <a href="index.html"><img src = "17.png" alt="Iglesia Restauracion Logo" class="church-logo"> </a>
                 </div>
                 <nav class="nav main-nav">
-                    <ul class="main-nav-list">
-                        <a href="pastorAbout.html"><li>Nuestro Pastor</li></a>
-                        <li>Ministerio de Alabanza</li>
-                        <li>Eventos</li>
-                        <li>Contacto</li>
-                    </ul>
+                    <div class="main-nav-list" id="nav-list">
+                        <div class="nav-links-block">
+                            <a class="nav-list-links" href="pastorAbout.html">Nuestro Pastor</a>
+                            <a class="nav-list-links">Ministerio de Alabanza</a>
+                            <a class="nav-list-links">Eventos</a>
+                            <a class="nav-list-links">Contacto</a>
+                        </div>
+                        <a href="#" class="mobile-nav-icon" id="hamburger-menu" onclick="responsiveMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>   
                 </nav>
             </div>
         </header>
@@ -34,6 +41,7 @@
                 <p>
                     This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. This is sample text. 
                 </p>
-            </div
+            </div>
         </div>
+        <script src="main.js"></script>
     </body>

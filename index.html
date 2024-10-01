@@ -7,9 +7,9 @@
         <title>Iglesia De Restauracion San Bernardino</title>
         <link rel="stylesheet" href="styles.css">
         <!-- Icon for hamburger menus used on smaller screens-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     </head>
+
     <body>
         <header class="main-header">
             <!-- Leave space for logo.png to serve as the home button-->
@@ -18,18 +18,20 @@
                     <a href="index.html"><img src = "17.png" alt="Iglesia Restauracion Logo" class="church-logo"> </a>
                 </div>
                 <nav class="nav main-nav">
-                    <ul class="main-nav-list hidden-nav-links" id="nav-links">
-                        <a href="pastorAbout.html"><li>Nuestro Pastor</li></a>
-                        <li>Ministerio de Alabanza</li>
-                        <li>Eventos</li>
-                        <li>Contacto</li>
-                    </ul>
-                    <a href="#" class="mobile-nav-icon" id="hamburger-menu">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                    <div class="main-nav-list" id="nav-list">
+                        <div class="nav-links-block">
+                            <a class="nav-list-links" href="pastorAbout.html">Nuestro Pastor</a>
+                            <a class="nav-list-links">Ministerio de Alabanza</a>
+                            <a class="nav-list-links">Eventos</a>
+                            <a class="nav-list-links">Contacto</a>
+                        </div>
+                        <a href="#" class="mobile-nav-icon" id="hamburger-menu" onclick="responsiveMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                    
                 </nav>
             </div>
-            
         </header>
 
         <!-- Slideshow Container -->
@@ -55,8 +57,8 @@
             </div>
 
             <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-            <a class="next" onclick="plusSlides(1)">&#10095</a>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
 
@@ -67,7 +69,8 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
-        <script src="main.js"></script>     
+        <script src="main.js"></script>
+        <footer></footer> 
     </body>
 
 </html>
