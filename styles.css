@@ -2,14 +2,26 @@
     body {max-width: 598px;}
 }
 
+@font-face {
+    font-family: 'proximanova';
+    src: url('Fonts/proximanova_regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 body {
     margin: 0;
+    font-family: 'proximanova';
+    background-color: #fdfeff;
 }
 
 /* Header Style */
 .main-header{
     max-height: 80px;
     background-color: #ffffff;
+    border-bottom: 1px solid #b9b9c1;
 }
 
 .header-container {
@@ -20,6 +32,13 @@ body {
     margin-bottom: auto;
     display: flex;
     align-items: center;
+}
+
+/* Page-wrap Style */
+
+.page-wrap {
+    min-height: 100%;
+    margin-bottom: 150px;
 }
 
 /* Nav Style */
@@ -134,6 +153,35 @@ body {
 
 }
 
+/* Styling for footer */
+.main-footer {
+    bottom: 0px;
+    height: 150px;
+    width: 100%;
+    border-top: 1px solid #b9b9c1;
+}
+
+.main-footer h3 {
+    font-size: 98%;
+}
+
+.footer-container {
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.church-info-text {
+    margin: 5px;
+}
+
+.social-media-container {
+    margin-left: auto;
+}
+
 /* Slideshow Style */
 
 .home-slideshow-container {
@@ -221,7 +269,7 @@ body {
 /* Style for Pastor About page */ 
 
 .pastor-about-container {
-    height: 1000px;
+    height: 600px;
     width: 1000px;
     margin: auto;
     display: flex;
@@ -240,11 +288,12 @@ body {
 .pastor-about-image {
     max-height: 500px;
     margin: auto;
-    padding-left: 100px;
+    padding-left: 60px;
 }
 
 .pastor-about-text {
-    width: 500px;
+    width: 450px;
+    padding-right: 40px;
 }
 
 /* Media query to override for mobile devices */
@@ -252,8 +301,9 @@ body {
 @media only screen and (max-width: 599px) {
 
     .pastor-about-container {
-        max-width: 590px;
+        max-width: 580px;
         margin-top: 28px;
+        margin-right: 0px;
         flex-direction: column;
         align-items: center;
     }
