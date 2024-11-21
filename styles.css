@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'proximanova';
+    src: url('Fonts/proximanova_regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'proximanova';
+    background-color: #fdfeff;
+    overflow-x: hidden;
+    position: relative;
+}
+
 @media only screen and (max-width: 599px) {
     html {
         min-height: 100vh;
@@ -7,22 +22,6 @@
         min-height: 100vh;
     }
 }
-
-@font-face {
-    font-family: 'proximanova';
-    src: url('Fonts/proximanova_regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-body {
-    margin: 0;
-    font-family: 'proximanova';
-    background-color: #fdfeff;
-    overflow-x: hidden;
-    position: relative;
 
 /* Header Style */
 .main-header{
@@ -51,6 +50,7 @@ body {
 @media only screen and (max-width: 599px) {
     .page-wrap {
         min-height: 100%;
+        margin-bottom: 0px;
     }
 }
 
