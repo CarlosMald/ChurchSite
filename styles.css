@@ -15,10 +15,10 @@ body {
 
 @media only screen and (max-width: 599px) {
     html {
-        height: calc(100% - 220px);
+        min-height: 100%;
     }
     body {
-        min-height: calc(100% - 321px);
+        max-height: calc(100% - 321px);
     }
 }
 
@@ -294,6 +294,12 @@ body {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+@media only screen and (max-width: 599px) {
+    .slideshow-caption {
+        width: 95%;
+    }
 }
 
 /* Style for Pastor About page */ 
