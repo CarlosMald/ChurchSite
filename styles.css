@@ -1,5 +1,11 @@
 @media only screen and (max-width: 599px) {
-    body {max-width: 598px;}
+    html {
+        min-height: 100vh;
+    }
+    body {
+        max-width: 598px;
+        min-height: 100vh;
+    }
 }
 
 @font-face {
@@ -15,7 +21,8 @@ body {
     margin: 0;
     font-family: 'proximanova';
     background-color: #fdfeff;
-}
+    overflow-x: hidden;
+    position: relative;
 
 /* Header Style */
 .main-header{
@@ -39,6 +46,12 @@ body {
 .page-wrap {
     min-height: 100%;
     margin-bottom: 150px;
+}
+
+@media only screen and (max-width: 599px) {
+    .page-wrap {
+        min-height: 100%;
+    }
 }
 
 /* Nav Style */
@@ -183,6 +196,23 @@ body {
     margin-left: auto;
 }
 
+@media only screen and (max-width: 599px) {
+    .main-footer {
+        height: 120px;
+        max-height: 120px;
+        font-size: 85%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 98%;
+        overflow-y: hidden;
+
+    }
+    .main-footer h3 {
+        font-size: 98%;
+    }
+}
+
 /* Slideshow Style */
 
 .home-slideshow-container {
@@ -310,7 +340,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1000px;
+    
+}
+
+.alabanzaDescImage {
+    size: 80%;
+}
+
+.alabanzaDescText{
+    width: 460px;
+    margin-right: 10px;
 }
 
 /* Media query to override for mobile devices */
@@ -337,6 +376,37 @@ body {
 
     .pastor-about-text {
         padding-bottom: 30px;
+    }
+
+    .alabanzaYoutubeVideo {
+        height: 400px;
+        width: 400px;
+    }
+    .alabanzaYoutubeContainer {
+        display: flex;
+        height: 400px;
+        width:400px;
+        align-items: center;
+        justify-content: center ;
+        margin-top: 20px;
+    }
+    
+    .alabanzaDescriptionContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        width: 400px;
+        
+    }
+    
+    .alabanzaDescImage {
+        size: 10%;
+    }
+    
+    .alabanzaDescText{
+        width: 260px;
+        margin-right: 10px;
     }
 
 }
