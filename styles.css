@@ -201,7 +201,7 @@ body {
         height: 120px;
         max-height: 120px;
         font-size: 85%;
-        position: absolute;
+        position: fixed;
         left: 0;
         bottom: 0;
         width: 98%;
