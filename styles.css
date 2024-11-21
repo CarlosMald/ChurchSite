@@ -10,16 +10,16 @@ body {
     font-family: 'proximanova';
     background-color: #fdfeff;
     overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
 }
 
 @media only screen and (max-width: 599px) {
     html {
-        min-height: 100vh;
+        height: 100%;
     }
     body {
-        max-width: 598px;
-        min-height: 100vh;
+        min-height: 100%;
     }
 }
 
@@ -201,7 +201,7 @@ body {
         height: 120px;
         max-height: 120px;
         font-size: 85%;
-        position: fixed;
+        position: absolute;
         left: 0;
         bottom: 0;
         width: 98%;
