@@ -446,3 +446,88 @@ body {
     }
 
 }
+
+/* Style for Celulas Page */
+
+.celulaImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.celulaGroupImage {
+    height: 420px;
+    width: 747px;
+    border-radius: 15px;
+}
+
+.celulaOverlayText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 400%;
+    color: #f2f2f2;
+}
+
+.celulaDescContainer {
+    width: 720px;
+    font-size: large;
+    margin-top: 30px;
+}
+
+#celulaFormContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.contactFormButton {
+    width: 730px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #1e72dc;
+    border-radius: 15px;
+}
+
+#contactForm {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 599px) {
+    .celula-page-wrap {
+        margin-bottom: 0px;
+        min-height: calc(100vh - 120px);
+    }
+
+    .celulaDescContainer {
+        width: 360px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .celulaGroupImage {
+        height: 220px;
+        width: 380px;
+    }
+
+    #celulaFormContainer {
+        margin-top: 20px;
+    }
+
+    .contactFormButton {
+        width: 360px;
+        font-size: 13px;
+        font-weight: bold;
+        color: #f2f2f2;
+    }
+
+    #contactForm {
+        width: 400px;
+    }
+}
