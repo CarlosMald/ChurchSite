@@ -8,7 +8,15 @@
         <link rel="stylesheet" href="styles.css">
         <!-- Icon for hamburger menus used on smaller screens-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    </head>
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+        <script rel="stylesheet" src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css"></script>
+        <style>
+            #calendar {
+                max-width: 800px;
+                margin: 20px auto;
+            }
+        </style>
+        </head>
 
     <body>
         <div class="page-wrap">
@@ -34,6 +42,37 @@
                     </nav>
                 </div>
             </header>
+            <div>
+                <div><h2 class="horarioTitle">Horario</h2></div>
+                <div class="horarioSlides">
+                    <div></div>
+                    <div class="slide">
+                        <h3>Domingo</h3>
+                        <ul>
+                            <li>9 AM - 11 AM: Primer Servicio</li>
+                            <li>12 PM - 2 PM: Segundo Servicio</li>
+                        </ul>
+                    </div>
+                    <div class="slide">
+                        <h3>Lunes</h3>
+                        <ul>
+                            <li>7:30 PM - 9:30 PM: Reunion de Celulas</li>
+                        </ul>
+                    </div>
+                    <div class="slide">
+                        <h3>Martes</h3>
+                        <ul>
+                            <li>7:30 PM - 9:30 PM: Reunion de Lideres</li>
+                        </ul>
+                    </div>
+                    <div class="slide"><h3>Miercoles</h3></div>
+                    <div class="slide"><h3>Jueves</h3></div>
+                    <div class="slide"><h3>Viernes</h3></div>
+                    <div class="slide"><h3>Sabado</h3></div>
+                    <div></div>
+                </div>
+            
+            </div>
         </div>
 
         <footer class="main-footer">
@@ -55,7 +94,5 @@
 
         <script src="main.js"></script>
     </body>
-
-
 
 </html>

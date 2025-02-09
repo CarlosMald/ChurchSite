@@ -531,3 +531,37 @@ body {
         width: 400px;
     }
 }
+
+/* Styles for Eventos page */
+
+.horarioTitle {
+    margin: 0 max(((100vw - 56rem)/2), 2rem);
+    margin-top: 40px;
+}
+
+.horarioSlides {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    margin: 0 max(((100vw - 56rem)/2), 2rem);
+    margin-top: 20px;
+    gap: 1rem;
+}
+
+.horarioSlides ul {
+    padding-left: 10px;
+}
+
+.horarioSlides li {
+    list-style-type: none;
+}
+
+.slide {
+    background-color: #e8dfdf;
+    width: 350px;
+    height: 200px;
+    padding-left: 15px;
+    border-radius: 12px;
+    min-width: 300px;
+}
