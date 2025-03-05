@@ -235,6 +235,9 @@ body {
     display: none;
 }
 
+.slidesImages {
+    border-radius: 12px;
+}
 
 .prev, .next {
     cursor: pointer;
@@ -326,12 +329,13 @@ body {
 .pastor-about-image-container {
     height: 500px;
     width: 500px;
+    display: flex;
 }
 
 .pastor-about-image {
     max-height: 500px;
     margin: auto;
-    padding-left: 60px;
+    border-radius: 12px;
 }
 
 .pastor-about-text {
@@ -385,6 +389,10 @@ body {
     margin-top: 20px;
 }
 
+.alabanzaYoutubeVideo {
+    border-radius: 12px;
+}
+
 .alabanzaDescriptionContainer {
     display: flex;
     align-items: center;
@@ -395,7 +403,7 @@ body {
 .alabanzaDescImage {
     height: 330px;
     width: 490px;
-    padding-left: 20px;
+    border-radius: 12px;
 }
 
 .alabanzaDescText{
@@ -533,10 +541,36 @@ body {
 }
 
 /* Styles for Eventos page */
+.horarioImageContainer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 40px;
+}
+
+#horarioImage {
+    opacity: .9;
+    width: 990px;
+    height: 385px;
+    border-radius: 12px;
+}
+
+.horarioImageText {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bolder;
+}
 
 .horarioTitle {
     margin: 0 max(((100vw - 56rem)/2), 2rem);
     margin-top: 40px;
+}
+
+.horarioSlidesContainer {
+    margin-top: 70px;
 }
 
 .horarioSlides {
@@ -559,9 +593,20 @@ body {
 
 .slide {
     background-color: #e8dfdf;
-    width: 350px;
-    height: 200px;
+    width: 450px;
+    height: 220px;
     padding-left: 15px;
     border-radius: 12px;
     min-width: 300px;
+}
+
+@media only screen and (max-width: 599px) {
+    #horarioImage {
+        width: 530px;
+        height: 220px;
+    }
+
+    .horarioSlidesContainer {
+        height: 350px;
+    }
 }
